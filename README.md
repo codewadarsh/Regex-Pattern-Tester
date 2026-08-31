@@ -1,7 +1,3 @@
-# Regex Pattern Tester
-
-A simple Python-based web application for testing and understanding Regular Expressions (Regex).
-
 ## Core Features
 
 - Pattern Testing

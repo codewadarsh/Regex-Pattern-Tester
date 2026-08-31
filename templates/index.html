@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regex Pattern Tester</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Regex Pattern Tester</h1>
+
+    <p>
+        Test patterns, understand regex, visualize matches
+        and compare performance.
+    </p>
+
+    <label>Regex Pattern</label>
+    <input id="pattern" placeholder="Example: \d+">
+
+    <label>Test Text</label>
+    <textarea id="text" placeholder="Enter text to test..."></textarea>
+
+    <div class="buttons">
+        <button onclick="testRegex()">Test Pattern</button>
+        <button onclick="saveCase()">Save Test Case</button>
+    </div>
+
+    <div class="card">
+
+        <h2>Result</h2>
+
+        <p id="message">
+            Enter a pattern and text.
+        </p>
+
+        <p>
+            <b>Matches:</b>
+            <span id="count">0</span>
+        </p>
+
+        <p>
+            <b>Explanation:</b>
+            <span id="explanation">-</span>
+        </p>
+
+        <div id="visual"></div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Performance Comparison</h2>
+
+        <input id="patterns"
+               placeholder="Example: \d+, [0-9]+">
+
+        <button onclick="compareRegex()">Compare</button>
+
+        <div id="comparison"></div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+  </html>
